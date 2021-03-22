@@ -20,6 +20,10 @@ nav {
   top: 0;
 }
 
+nav li a {
+  color: rgb(53, 139, 0);
+}
+
 nav ul {
   display: flex;
   justify-content: space-around;
@@ -27,6 +31,9 @@ nav ul {
   font-family: "Heebo";
   font-size: 2rem;
   text-shadow: black 3px 3px 5px;
+}
+nav ul a:hover {
+  color: rgb(224, 136, 21);
 }
 
 #nav-menu {
