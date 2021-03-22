@@ -1,8 +1,8 @@
 - 👋 Hi, I’m @timotheegrollier
 - 👀 I’m interested in Web developement
-- 🌱 I’m currently learning ...
-- 💞️ I’m looking to collaborate on ...
-- 📫 How to reach me ...
+- 🌱 I’m currently learning JS / PHP
+- 💞️ I’m looking to collaborate on Website
+- 📫 How to reach me timotheegrollier@gmail.com
 
 <!---
 timotheegrollier/timotheegrollier is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
