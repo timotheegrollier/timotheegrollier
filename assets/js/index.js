@@ -1,8 +1,9 @@
-function myFunction() {
-    var x = document.getElementById("myLinks");
-    if (x.style.display === "block") {
-      x.style.display = "none";
-    } else {
-      x.style.display = "block";
-    }
-  }
+$( document ).ready(function() {
+  $(".burg").click(function(){
+    $(".menu-mobile").css("transform","translateY(0)");
+    $(".burg").hide();
+  });
+  $(".all").click(function(){
+$(".menu-mobile").css("transform","translateY(-100%)")
+  });
+});
