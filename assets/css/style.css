@@ -43,6 +43,7 @@ body {
   height: 5vh;
   position: fixed;
   width: 100%;
+  z-index: 3;
 }
 #nav-menu ul {
   display: flex;
@@ -57,8 +58,26 @@ body {
 #nav-menu ul a:hover {
   color: darkcyan;
 }
-#nav-menu .icon-burger {
+#nav-menu .icons {
+  position: relative;
+}
+#nav-menu .icons .icon-burger {
   display: none;
+}
+#nav-menu .icons .cross {
+  display: none;
+  background: none;
+  position: absolute;
+  top: -21px;
+  right: -5px;
+  color: white;
+  border: 0;
+  font-size: 3.5em;
+  line-height: 65px;
+  font-weight: bold;
+  cursor: pointer;
+  outline: none;
+  z-index: 10000000000000;
 }
 
 #zone1 {
@@ -92,6 +111,7 @@ body {
   width: 40%;
   border-radius: 50%;
   opacity: 0.3;
+  z-index: 1;
 }
 #zone1 a {
   text-decoration: none;
@@ -177,13 +197,28 @@ body {
   bottom: 0;
   width: 100%;
   height: 100vh;
-  background: #333;
+  background: lightskyblue;
   color: white;
   transform: translateY(-100%);
   transition: transform 0.2s;
-  list-style: none;
   padding-top: 4rem;
-  z-index: 100;
+  z-index: 2;
+}
+.menu-mobile ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 80%;
+  align-items: center;
+}
+.menu-mobile ul a {
+  text-decoration: none;
+  font-size: 3rem;
+  font-family: "Train";
+  color: white;
+}
+.menu-mobile ul a:hover {
+  color: darkcyan;
 }
 
 @media screen and (max-width: 768px) {
@@ -223,7 +258,7 @@ body {
   #nav-menu ul {
     display: none;
   }
-  #nav-menu .icon-burger {
+  #nav-menu .icons .icon-burger {
     display: block;
     font-size: 1.5rem;
     color: white;
