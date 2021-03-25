@@ -1,3 +1,13 @@
+@font-face {
+  font-family: "Train";
+  src: url(/assets/font/TrainOne-Regular.ttf);
+}
+
+@font-face {
+  font-family: "pop";
+  src: url(/assets/font/Poppins-Black.ttf);
+}
+
 @import "mixins";
 @import "extend";
 
@@ -14,8 +24,8 @@ body {
 
 .nav-logo {
   background: url(/assets/img/developpement-code.png) center/cover;
-  height: 50px;
-  width: 50px;
+  height: 30px;
+  width: 30px;
 }
 
 #nav-menu {
@@ -23,14 +33,20 @@ body {
   justify-content: space-around;
   align-items: center;
   background: gainsboro;
+  height: 5vh;
 
   ul {
     display: flex;
     justify-content: space-between;
     width: 50%;
+    font-family: "Train";
+
     a {
       text-decoration: none;
       color: rgb(46, 73, 19);
+      &:hover {
+        color: darkcyan;
+      }
     }
   }
   .icon-burger {
@@ -39,23 +55,55 @@ body {
 }
 
 #zone1 {
-  height: 90vh;
+  height: 95vh;
+  font-family: "pop";
 
   @include grid50();
   #cadre1 {
-    height: 60%;
+    height: 100%;
     background: lightskyblue;
+    @extend %dflex-center;
+    flex-direction: column;
     h2 {
       color: rgb(47, 40, 78);
       @extend %dflex-center;
     }
+    #timo {
+      background: url(/assets/img/timo.jpg) center/cover;
+      //   object-fit: cover;
+      @extend %mtop;
+      width: 30%;
+      height: 30%;
+      border-radius: 50px;
+    }
   }
   #cadre2 {
     @extend %dflex-center;
-    height: 60%;
+    flex-direction: column;
+    height: 100%;
     background: chocolate;
     h3 {
       @extend %dflex-center;
     }
+    #dev-back {
+      background: url(/assets/img/K5I1.gif) center/cover;
+      height: 20%;
+      width: 40%;
+      border-radius: 50%;
+      opacity: 0.3;
+    }
+  }
+  a {
+    text-decoration: none;
+    @extend %mtop;
+    &:hover {
+      color: darkcyan;
+    }
+  }
+}
+
+@media screen and (max-width: 576px) {
+  #zone1 {
+    grid-template-columns: 1fr;
   }
 }
