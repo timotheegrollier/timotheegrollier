@@ -1,11 +1,11 @@
 @font-face {
   font-family: "Train";
-  src: url(/assets/font/TrainOne-Regular.ttf);
+  src: url(./assets/font/TrainOne-Regular.ttf);
 }
 
 @font-face {
   font-family: "pop";
-  src: url(/assets/font/Poppins-Black.ttf);
+  src: url(./assets/font/Poppins-Black.ttf);
 }
 
 @import "mixins";
@@ -92,7 +92,7 @@ body {
       @extend %dflex-center;
     }
     #timo {
-      background: url(/assets/img/timo.jpg) center/cover;
+      background: url(./assets/img/timo.jpg) center/cover;
       //   object-fit: cover;
       @extend %mtop;
       width: 30%;
@@ -109,7 +109,7 @@ body {
       @extend %dflex-center;
     }
     #dev-back {
-      background: url(/assets/img/K5I1.gif) center/cover;
+      background: url(./assets/img/K5I1.gif) center/cover;
       height: 30%;
       width: 40%;
       border-radius: 50%;
@@ -155,37 +155,37 @@ body {
       @extend %mtop;
 
       .html {
-        background: url(/assets/img/HTm.png) center/cover;
+        background: url(./assets/img/HTm.png) center/cover;
         height: 100px;
         width: 100px;
       }
       .css {
-        background: url(/assets/img/cs.png) center/cover;
+        background: url(./assets/img/cs.png) center/cover;
         height: 100px;
         width: 70px;
       }
       .sass {
-        background: url(/assets/img/sass.png) center/cover;
+        background: url(./assets/img/sass.png) center/cover;
         height: 100px;
         width: 100px;
       }
       .js {
-        background: url(/assets/img/js.png) center/cover;
+        background: url(./assets/img/js.png) center/cover;
         height: 100px;
         width: 100px;
       }
       .jquery {
-        background: url(/assets/img/jquey.png) center/cover;
+        background: url(./assets/img/jquey.png) center/cover;
         height: 100px;
         width: 100px;
       }
       .git {
-        background: url(/assets/img/git-1-226092.webp) center/cover;
+        background: url(./assets/img/git-1-226092.webp) center/cover;
         height: 100px;
         width: 100px;
       }
       .bootstrap {
-        background: url(/assets/img/bootstrap-6-1175203.png) center/cover;
+        background: url(./assets/img/bootstrap-6-1175203.png) center/cover;
         height: 100px;
         width: 100px;
       }
