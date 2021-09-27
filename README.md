@@ -1,6 +1,6 @@
 - 👋 Hi, I’m @timotheegrollier
 - 👀 I’m interested in Web developement
-- 🌱 I’m currently learning JS / PHP
+- 🌱 I’m currently learning Python
 - 💞️ I’m looking to collaborate on Website
 - 📫 How to reach me timotheegrollier@gmail.com
 
